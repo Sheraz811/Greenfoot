@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+#box
+{
+
+ 
+border: solid 3px brown;
+border-radius: 20px;
+padding: 20px;
+text-center: align;
+
+}
+
+
+
+.button
+{
+ 
+  border: solid 3px black;
+  border-radius: 5px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;  
+  font-size: 16px;
+ 
+   
+}
+
+</style>
+</head>
+<body>
+
+<h1>Chess</h1>
+<img src = "Violin.jpg" alt = "Violin" width = 500 legnth = 500>
+<p id = "text"></p>
+<button class = "button" id = "button" onclick = "DisplayText()">Read Description</button>
+<a href = "https://www.youtube.com/watch?v=IxoYvbV4eEQ">
+<button class = "button" id = "button2"> Watch Music Video </button>
+</a>
+<a href = "https://videogameasdasd.w3spaces.com/mainpage.html">
+<button class = "button" id = "button3">Go Back to Hand</button>
+</a>
+
+ 
+  
+
+<script>
+function DisplayText() {
+   document.getElementById("text").setAttribute("id", "box");
+  document.getElementById("box").innerHTML = "I first began learning the violin when I was in grade 7. At first I struggle to get a grasp of the basic concepts, but I edventually got the hang of it and was able to start playing better. Although I was enjoying myself, Once I reached grade 9 I decided to take a break from it as I had alot of homework from school. Once I was in grade 11, I began to continue again and have made great improvements in my ability to play the violin.  You can listen to a sample of what I played at a recital in grade 7 by clicking on the link.";
+  document.getElementById("button").innerHTML= "Hide";
+  document.getElementById("button").setAttribute("onclick", "HideText()");
+ 
+  }
+function HideText()
+{
+  document.getElementById("button").innerHTML = "Read Description";
+  document.getElementById("button").setAttribute("onclick", "DisplayText()");
+  document.getElementById("box").innerHTML = "";
+  document.getElementById("box").setAttribute("id", "text");
+ 
+}
+ 
+
+ 
+</script>
+</body>
+</html>
+
+ 
+
+
 
